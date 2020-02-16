@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@drawable/title_bar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="26dp"
+            android:fontFamily="@font/uni_neue_bold"
+            android:padding="10dp"
+            android:text="FAQ"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"></TextView>
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/ic_more_horiz_black_24dp"
+            android:onClick="startChatScreen"></Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvHowToUseQodra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginRight="36dp"
+            android:fontFamily="@font/uni_neue_bold"
+            android:text="How to use Qodra?"
+            android:textSize="19dp"
+            android:textStyle="italic"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="36dp"
+            android:background="@color/colorDivider"></TextView>
+
+        <LinearLayout
+            android:id="@+id/layoutHowToUseQodra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="36dp"
+                android:fontFamily="@font/uni_neue_regular"
+                android:text="Aliquam in bibendum mauris. Sed vitae erat vel velit blandit pharetra vitae nec ante. Cras at est augue. Cras ut interdum elit. Ut malesuada a urna sit amet blandit. Nullam nunc lorem, aliquam at eros laoreet, feugiat bibendum ligula. Aenean congue, massa id aliquet semper, ligula ante tristique nulla, quis posuere dui purus vel urna. Nullam varius, magna nec egestas convallis, orci ex tempus quam, id finibus arcu ipsum fringilla purus. Aenean dapibus suscipit eleifend. Aliquam vel ipsum eu lorem hendrerit iaculis vitae ut lorem. Suspendisse ullamcorper dolor faucibus sem auctor consequat. Ut luctus posuere auctor. Sed non molestie metus."
+                android:textSize="15dp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginRight="36dp"
+                android:background="@color/colorDivider"></TextView>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvWhoBuildThatApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginRight="36dp"
+            android:fontFamily="@font/uni_neue_bold"
+            android:text="Who build that app?"
+            android:textSize="19dp"
+            android:textStyle="italic"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="36dp"
+            android:background="@color/colorDivider"></TextView>
+
+        <LinearLayout
+            android:id="@+id/layoutWhoBuildThatApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="36dp"
+                android:fontFamily="@font/uni_neue_regular"
+                android:text="Aliquam in bibendum mauris. Sed vitae erat vel velit blandit pharetra vitae nec ante. Cras at est augue. Cras ut interdum elit. Ut malesuada a urna sit amet blandit. Nullam nunc lorem, aliquam at eros laoreet, feugiat bibendum ligula. Aenean congue, massa id aliquet semper, ligula ante tristique nulla, quis posuere dui purus vel urna. Nullam varius, magna nec egestas convallis, orci ex tempus quam, id finibus arcu ipsum fringilla purus. Aenean dapibus suscipit eleifend. Aliquam vel ipsum eu lorem hendrerit iaculis vitae ut lorem. Suspendisse ullamcorper dolor faucibus sem auctor consequat. Ut luctus posuere auctor. Sed non molestie metus."
+                android:textSize="15dp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginRight="36dp"
+                android:background="@color/colorDivider"></TextView>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvHowDoesThisAppWork"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginRight="36dp"
+            android:fontFamily="@font/uni_neue_bold"
+            android:text="How does that app work?"
+            android:textSize="19dp"
+            android:textStyle="italic"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="36dp"
+            android:background="@color/colorDivider"></TextView>
+
+        <LinearLayout
+            android:id="@+id/layoutHowDoesThisAppWork"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="36dp"
+                android:fontFamily="@font/uni_neue_regular"
+                android:text="Aliquam in bibendum mauris. Sed vitae erat vel velit blandit pharetra vitae nec ante. Cras at est augue. Cras ut interdum elit. Ut malesuada a urna sit amet blandit. Nullam nunc lorem, aliquam at eros laoreet, feugiat bibendum ligula. Aenean congue, massa id aliquet semper, ligula ante tristique nulla, quis posuere dui purus vel urna. Nullam varius, magna nec egestas convallis, orci ex tempus quam, id finibus arcu ipsum fringilla purus. Aenean dapibus suscipit eleifend. Aliquam vel ipsum eu lorem hendrerit iaculis vitae ut lorem. Suspendisse ullamcorper dolor faucibus sem auctor consequat. Ut luctus posuere auctor. Sed non molestie metus."
+                android:textSize="15dp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginRight="36dp"
+                android:background="@color/colorDivider"></TextView>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvDocumentation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginRight="36dp"
+            android:fontFamily="@font/uni_neue_bold"
+            android:text="Documenation"
+            android:textSize="19dp"
+            android:textStyle="italic"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="36dp"
+            android:background="@color/colorDivider"></TextView>
+
+        <LinearLayout
+            android:id="@+id/layoutDocumenation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="36dp"
+                android:fontFamily="@font/uni_neue_regular"
+                android:text="Aliquam in bibendum mauris. Sed vitae erat vel velit blandit pharetra vitae nec ante. Cras at est augue. Cras ut interdum elit. Ut malesuada a urna sit amet blandit. Nullam nunc lorem, aliquam at eros laoreet, feugiat bibendum ligula. Aenean congue, massa id aliquet semper, ligula ante tristique nulla, quis posuere dui purus vel urna. Nullam varius, magna nec egestas convallis, orci ex tempus quam, id finibus arcu ipsum fringilla purus. Aenean dapibus suscipit eleifend. Aliquam vel ipsum eu lorem hendrerit iaculis vitae ut lorem. Suspendisse ullamcorper dolor faucibus sem auctor consequat. Ut luctus posuere auctor. Sed non molestie metus."
+                android:textSize="15dp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginRight="36dp"
+                android:background="@color/colorDivider"></TextView>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvContactUs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginRight="36dp"
+            android:fontFamily="@font/uni_neue_bold"
+            android:text="Contact Us"
+            android:textSize="19dp"
+            android:textStyle="italic"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="36dp"
+            android:background="@color/colorDivider"></TextView>
+
+        <LinearLayout
+            android:id="@+id/layoutContactUs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="36dp"
+                android:fontFamily="@font/uni_neue_regular"
+                android:text="Aliquam in bibendum mauris. Sed vitae erat vel velit blandit pharetra vitae nec ante. Cras at est augue. Cras ut interdum elit. Ut malesuada a urna sit amet blandit. Nullam nunc lorem, aliquam at eros laoreet, feugiat bibendum ligula. Aenean congue, massa id aliquet semper, ligula ante tristique nulla, quis posuere dui purus vel urna. Nullam varius, magna nec egestas convallis, orci ex tempus quam, id finibus arcu ipsum fringilla purus. Aenean dapibus suscipit eleifend. Aliquam vel ipsum eu lorem hendrerit iaculis vitae ut lorem. Suspendisse ullamcorper dolor faucibus sem auctor consequat. Ut luctus posuere auctor. Sed non molestie metus."
+                android:textSize="15dp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginRight="36dp"
+                android:background="@color/colorDivider"></TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
