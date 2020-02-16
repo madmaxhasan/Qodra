@@ -1,23 +1,34 @@
-#import libraries
 from chatterbot import ChatBot
 from chatterbot.trainers import ListTrainer
-import os
+from chatterbot.trainers import ChatterBotCorpusTrainer
+from chatterbot.response_selection import get_first_response
+from chatterbot.comparisons import levenshtein_distance
 
-#Create a chatbot
-bot=ChatBot('Candice')
-bot.set_trainer(ListTrainer)
+bot = ChatBot(
+    'Example Bot',
+    storage_adapter='chatterbot.storage.SQLStorageAdapter',
+    logic_adapters=[
+        {
+            "import_path": "chatterbot.logic.BestMatch",
+            "statement_comparison_function": levenshtein_distance,
+            "response_selection_method": get_first_response
+        },
+    ]
+)
 
-#training on english dataset
-for files in os.listdir('C:/Users/HaSaN-PC/Downloads/Compressed/chatterbot-corpus-1.2.0/chatterbot_corpus/data/english/'):
-    data=open('C:/Users/HaSaN-PC/Downloads/Compressed/chatterbot-corpus-1.2.0/chatterbot_corpus/data/english/' + files, 'r').readlines()
-    bot.train(data)
+trainer = ChatterBotCorpusTrainer(bot)
 
-#chat feature
+trainer.train(
+    "chatterbot.corpus.english",
+    "chatterbot.corpus.bangla"
+)
+
+print("please enter to chat data")
+
 while True:
-    message=input('\t\t\tYou:')
-    if message.strip()!='Bye':
-        reply=bot.get_response(message)
-        print('Candice:',reply)
-    if message.strip()=='Bye':
-        print('Candice: Bye')
+    try:
+        bot_input = bot.get_response(input())
+        print(bot_input)
+
+    except(KeyboardInterrupt, EOFError, SystemExit):
         break
