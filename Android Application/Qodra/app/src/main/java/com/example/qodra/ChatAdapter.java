@@ -20,6 +20,7 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ViewHolder> {
         this.listChats = listChats;
     }
 
+    // Setting up ViewHolder for Recycler View. From which class data will be shown on ViewHolder
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -28,6 +29,7 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ViewHolder> {
         return new ViewHolder(v);
     }
 
+    // Binding the data into ViewHolder
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
@@ -46,11 +48,13 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ViewHolder> {
         }
     }
 
+    // View item count
     @Override
     public int getItemCount() {
         return listChats == null ? 0 : listChats.size();
     }
 
+    // Setting Variables for ViewHolder
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         public TextView textViewBotText;
