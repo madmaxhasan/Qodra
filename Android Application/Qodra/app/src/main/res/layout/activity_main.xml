@@ -11,18 +11,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:clickable="false"
-        android:background="@drawable/home_logo">
-    </ImageView>
+        android:background="@drawable/home_logo"
+        android:clickable="false"></ImageView>
 
     <TextView
         android:id="@+id/main_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/main_logo"
-        android:padding="5dp"
         android:clickable="false"
         android:fontFamily="@font/uni_neue_bold"
+        android:padding="5dp"
         android:text="@string/app_name"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
@@ -32,27 +31,25 @@
         android:id="@+id/main_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_below="@+id/main_title"
+        android:layout_centerHorizontal="true"
+        android:clickable="false"
         android:fontFamily="@font/uni_neue_book"
         android:text="AI based chatbot for available"
         android:textAlignment="center"
-        android:clickable="false"
         android:textColor="#FFFFFF"
-        android:textSize="12dp">
-    </TextView>
+        android:textSize="12dp"></TextView>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_below="@+id/main_text"
+        android:layout_centerHorizontal="true"
+        android:clickable="false"
         android:fontFamily="@font/uni_neue_book"
         android:text="buses on Dhaka City Route"
         android:textAlignment="center"
-        android:clickable="false"
         android:textColor="#FFFFFF"
-        android:textSize="12dp">
-    </TextView>
+        android:textSize="12dp"></TextView>
 
 </RelativeLayout>

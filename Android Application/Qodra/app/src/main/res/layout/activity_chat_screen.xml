@@ -21,8 +21,7 @@
             android:layout_marginLeft="15dp"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
-            android:background="@drawable/title_bar_logo">
-        </ImageView>
+            android:background="@drawable/title_bar_logo"></ImageView>
 
         <Button
             android:layout_width="45dp"
@@ -30,9 +29,8 @@
             android:layout_alignParentRight="true"
             android:layout_centerInParent="true"
             android:layout_marginRight="10dp"
-            android:onClick="startFAQScreen"
-            android:background="@drawable/ic_more_horiz_black_24dp">
-        </Button>
+            android:background="@drawable/ic_more_horiz_black_24dp"
+            android:onClick="startFAQScreen"></Button>
 
     </RelativeLayout>
 
@@ -40,14 +38,14 @@
         android:id="@+id/rvChatScreen"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:layout_below="@+id/layoutTitle"
         android:layout_above="@+id/layoutButtons"
-        android:padding="10dp"
+        android:layout_below="@+id/layoutTitle"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
         android:background="#FFFFFF"
-        android:clipToPadding="false"/>
+        android:clipToPadding="false"
+        android:padding="10dp" />
 
     <RelativeLayout
         android:id="@+id/layoutButtons"
@@ -63,11 +61,11 @@
             android:layout_alignParentLeft="true"
             android:layout_centerInParent="true"
             android:layout_marginLeft="10dp"
-            android:padding="5dp"
             android:background="#FFFFFF"
             android:fontFamily="@font/uni_neue_regular"
             android:hint="Ask me from place to place"
             android:minHeight="50dp"
+            android:padding="5dp"
             android:textColor="#000000"
             android:textSize="18dp" />
 
@@ -78,15 +76,7 @@
             android:layout_alignParentRight="true"
             android:layout_centerInParent="true"
             android:layout_marginRight="60dp"
-            android:background="@drawable/voice_button">
-
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_centerInParent="true"
-                android:src="@drawable/ic_keyboard_voice_black_24dp"
-                android:tint="#fff" />
-        </RelativeLayout>
+            android:background="@drawable/voice_button"></RelativeLayout>
 
         <RelativeLayout
             android:id="@+id/buttonSend"
@@ -95,15 +85,7 @@
             android:layout_alignParentRight="true"
             android:layout_centerInParent="true"
             android:layout_marginRight="5dp"
-            android:background="@drawable/sendbutton">
-
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_centerInParent="true"
-                android:src="@drawable/ic_send_white_24dp"
-                android:tint="#fff" />
-        </RelativeLayout>
+            android:background="@drawable/send_button"></RelativeLayout>
 
     </RelativeLayout>
 
