@@ -69,15 +69,17 @@ public class ChatScreen extends AppCompatActivity {
         editText = findViewById(R.id.edChat);
         recyclerView = findViewById(R.id.rvChatScreen);
 
+        // Chat Adapter
+        adapter = new ChatAdapter(listChats, this);
+
         // Setting Linear Layout for RecyclerView
         final LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
-        linearLayoutManager.setStackFromEnd(false);
-        linearLayoutManager.setReverseLayout(false);
+        linearLayoutManager.setStackFromEnd(true);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(linearLayoutManager);
 
-        // Chat Adapter
-        adapter = new ChatAdapter(listChats, this);
+
+
 
         // Creating Speech Recognizer Variable and Intent
         speechRecognizer = SpeechRecognizer.createSpeechRecognizer(this);
@@ -175,6 +177,7 @@ public class ChatScreen extends AppCompatActivity {
                     GetBotReply(message);               // Getting BOT response from API
 
                     recyclerView.setAdapter(adapter);
+                    adapter.notifyDataSetChanged();
                 }
                 editText.setText("");
             }
@@ -188,6 +191,8 @@ public class ChatScreen extends AppCompatActivity {
                 switch (event.getAction()) {
                     case MotionEvent.ACTION_UP:             // Button Pressed Stoped
                         speechRecognizer.stopListening();
+                        speechRecognizer.cancel();
+                        speechRecognizer.destroy();
                         break;
 
                     case MotionEvent.ACTION_DOWN:           // Button Pressed
