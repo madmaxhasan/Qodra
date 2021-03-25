@@ -3,5 +3,5 @@ chatterbot-corpus==1.1.4
 mathparse==0.1.2
 nltk==3.4.5
 python-dateutil==2.6.1
-PyYAML==3.13
+PyYAML==5.4
 SQLAlchemy==1.1.18
